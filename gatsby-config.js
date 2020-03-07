@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Ayyylmao`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Riku Vidqvist`,
+    description: `Hi! This is my personal website where you can find information about me and what I do. Everything here was made by me, with a little help from Gatsby.js ofcourse. `,
+    author: `@gatsbyjs and @vidvi`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,7 +22,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/riku-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

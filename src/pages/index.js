@@ -19,7 +19,7 @@ const spring = {
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Riku, a web designer." />
     <motion.h1 class="ayylmao"
         transition={spring} animate={{ scale: 1.1, x: 100, y: 50 }}
           >Hello.</motion.h1>
