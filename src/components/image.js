@@ -30,20 +30,4 @@ const Image = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-const SecImage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "rikukuva.JPG"}) {
-        childImageSharp{
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        } 
-      }
-    }
-  `)
-
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-}
-
 export default Image
