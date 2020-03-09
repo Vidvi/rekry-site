@@ -33,7 +33,7 @@ const Image = () => {
 const SecImage = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: File(relativePath: { eq: "rikukuva.JPG"}) {
+      placeholderImage: file(relativePath: { eq: "rikukuva.JPG"}) {
         childImageSharp{
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
