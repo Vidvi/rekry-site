@@ -1,5 +1,5 @@
 p {
-  color: white;
+  color: black;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
@@ -22,7 +22,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000;
+  background-color: white;
 }
 article,
 aside,
@@ -79,7 +79,7 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-  color: white;
+  color: black;
 }
 mark {
   background-color: #ff0;

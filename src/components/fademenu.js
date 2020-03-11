@@ -18,7 +18,12 @@ function FadeMenu() {
     };
   
     return (
-      <div>
+      <div 
+        style={{
+          textAlign: "right",
+          position: "relative",
+          bottom: "4.8rem"
+        }}>
         <Button aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick}>
           Ménu
         </Button>
@@ -31,8 +36,8 @@ function FadeMenu() {
           TransitionComponent={Fade}
         >
           <MenuItem onClick={handleClose}>Profile</MenuItem>
-          <MenuItem onClick={handleClose}>My account</MenuItem>
-          <MenuItem onClick={handleClose}>Logout</MenuItem>
+          <MenuItem onClick={handleClose}>Projects</MenuItem>
+          <MenuItem onClick={handleClose}>Contact info</MenuItem>
         </Menu>
       </div>
     );

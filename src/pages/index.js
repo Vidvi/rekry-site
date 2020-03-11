@@ -28,11 +28,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Riku Vidqvist" />
     <FadeMenu />
-    <motion.h1 class="ayylmao"
-        transition={spring} animate={{ scale: 1.1, x: 100 }}
+    <motion.h1 style={{ textAlign: "center", lineHeight: 1.5 }} 
+        transition={spring} animate={{ scale: 2.0, y: 100 }}
           >Hello.</motion.h1>
-    <motion.p class="ayylmao"
-        transition={spring} animate={{ scale: 1.1, x: 100 }}
+    <motion.p style={{ textAlign: "center", lineHeight: 1.5 }}
+        transition={spring} animate={{ scale: 2.0, y: 100 }}
           >Welcome to my site!</motion.p>
     <div style={{ maxWidth: `300px` }}>
     </div>
