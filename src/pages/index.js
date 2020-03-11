@@ -1,10 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 import { motion } from "framer-motion"
+import Grid from '@material-ui/core/Grid'
 
 import Layout from "../components/layout"
+import Image2 from "../components/dataimage"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import { Paper, Menu } from "@material-ui/core"
+import { MenuItem } from "react-bootstrap"
+import FadeMenu from "../components/fademenu"
 
 
 const variants = {
@@ -18,9 +23,11 @@ const spring = {
   stiffness: 100
 }
 
+
 const IndexPage = () => (
   <Layout>
-    <SEO title="Riku, a web designer." />
+    <SEO title="Riku Vidqvist" />
+    <FadeMenu />
     <motion.h1 class="ayylmao"
         transition={spring} animate={{ scale: 1.1, x: 100 }}
           >Hello.</motion.h1>
@@ -28,9 +35,9 @@ const IndexPage = () => (
         transition={spring} animate={{ scale: 1.1, x: 100 }}
           >Welcome to my site!</motion.p>
     <div style={{ maxWidth: `300px` }}>
-      <Image class="yaboi"/>
     </div>
-  </Layout>
-)
+    
+    </Layout>
+  )
 
 export default IndexPage
