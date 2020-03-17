@@ -3,6 +3,8 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Fade from '@material-ui/core/Fade';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 
 
 function FadeMenu() {
@@ -16,6 +18,8 @@ function FadeMenu() {
     const handleClose = () => {
       setAnchorEl(null);
     };
+
+    const element = <FontAwesomeIcon icon={faEllipsisV} />
   
     return (
       <div 
@@ -25,7 +29,7 @@ function FadeMenu() {
           bottom: "4.8rem"
         }}>
         <Button aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick}>
-          Ménu
+          { element }
         </Button>
         <Menu
           id="fade-menu"
