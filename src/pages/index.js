@@ -10,6 +10,7 @@ import SEO from "../components/seo"
 import { Paper, Menu } from "@material-ui/core"
 import { MenuItem } from "react-bootstrap"
 import FadeMenu from "../components/fademenu"
+import SpacingGrid from "../components/grid"
 
 
 const variants = {
@@ -27,15 +28,16 @@ const spring = {
 const IndexPage = () => (
   <Layout>
     <SEO title="Riku Vidqvist" />
-    <FadeMenu />
     <div style={{ margingBottom: "2rem" }}>
     <motion.h1 style={{ textAlign: "center", lineHeight: 1.5, size:"1.5" }} 
-        transition={spring} animate={{ scale: 1.1, y: 100 }}
+        transition={spring} 
+        animate={{ scale: 1.1, y: 20 }}
           >Hello.</motion.h1>
     <motion.p style={{ textAlign: "center", lineHeight: 1.5 }}
-        animate={{ scale: 1.1, y: 100 }}
+        animate={{ scale: 1.1, y: 20 }}
           >Welcome to my site!</motion.p>
     </div>
+    <SpacingGrid/>
     <div style={{ maxWidth: `300px` }}>
     </div>
     

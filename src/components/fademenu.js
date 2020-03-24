@@ -24,9 +24,10 @@ function FadeMenu() {
     return (
       <div 
         style={{
+          position: "absolute",
           textAlign: "right",
-          position: "relative",
-          bottom: "4.8rem"
+          paddingTop: "1%",
+          right: "7%"
         }}>
         <Button aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick}>
           { element }
