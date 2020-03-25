@@ -27,7 +27,7 @@ const IndexPage = () => (
     <div style={{margingBottom: "2rem"}}>
     <motion.h1 style={{ textAlign: "center", lineHeight: 1.5, fontSize:"5rem", color:"gainsboro" }}
         transition={spring} 
-        animate={{ scale: 1.2, y: 30 }}
+        animate={{ scale: 1.1, y: 30 }}
           >Hello</motion.h1>
     <motion.p style={{ textAlign: "center", lineHeight: 1.5, fontSize:"3rem", color:"gainsboro"}}
         animate={{ scale: 1.1, y: 20 }}
