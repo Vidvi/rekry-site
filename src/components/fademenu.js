@@ -5,6 +5,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Fade from '@material-ui/core/Fade';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "gatsby"
 
 
 function FadeMenu() {
@@ -27,9 +28,9 @@ function FadeMenu() {
           position: "absolute",
           textAlign: "right",
           paddingTop: "1%",
-          right: "7%"
+          right: "7%",
         }}>
-        <Button aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick}>
+        <Button aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick} style={{color:"#e7b2a5"}}>
           { element }
         </Button>
         <Menu
@@ -40,7 +41,8 @@ function FadeMenu() {
           onClose={handleClose}
           TransitionComponent={Fade}
         >
-          <MenuItem onClick={handleClose}>Profile</MenuItem>
+          <MenuItem onClick={handleClose}><Link to="/profile"> Profile</Link>
+          </MenuItem>
           <MenuItem onClick={handleClose}>Projects</MenuItem>
           <MenuItem onClick={handleClose}>Contact info</MenuItem>
         </Menu>

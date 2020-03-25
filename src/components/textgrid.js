@@ -22,24 +22,22 @@ const code = <FontAwesomeIcon icon={faCode} />
 const useStyles = makeStyles(theme => ({
   root: {
     size: "300%",
-    paddingTop: 100,
     flexGrow: 1,
   },
   paper: {
     textAlign: 'center',
     color: '#e7b2a5',
-    fontSize: '4rem'
   },
 }));
 
-function SpacingGrid() {
+function TextGrid() {
   const classes = useStyles();
- 
+
   return (
     <Grid container className={classes.root} spacing={7} justify="center">
-      <Grid item xs={4} className={classes.paper}> {portrait} </Grid>
-      <Grid item xs={4} className={classes.paper}> {idcard} </Grid>
-      <Grid item xs={4} className={classes.paper}> {code} </Grid>
+      <Grid item xs={4} className={classes.paper}> Start by clicking the icon to learn more about me! </Grid>
+      <Grid item xs={4} className={classes.paper}> Click the icon above to get some contact info. </Grid>
+      <Grid item xs={4} className={classes.paper}> If you click the icon above you can view some of my previous projects! </Grid>
       </Grid>
   );
-}   export default SpacingGrid
+}   export default TextGrid

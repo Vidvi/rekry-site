@@ -11,6 +11,7 @@ import { Paper, Menu } from "@material-ui/core"
 import { MenuItem } from "react-bootstrap"
 import FadeMenu from "../components/fademenu"
 import SpacingGrid from "../components/grid"
+import TextGrid from "../components/textgrid"
 
 
 const variants = {
@@ -20,24 +21,26 @@ const variants = {
 
 const spring = {
   type: "spring",
-  damping: 10,
-  stiffness: 100
+  damping: 8,
+  stiffness: 80
 }
 
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Riku Vidqvist" />
-    <div style={{ margingBottom: "2rem" }}>
-    <motion.h1 style={{ textAlign: "center", lineHeight: 1.5, size:"1.5" }} 
+    <div style={{margingBottom: "2rem", paddingLeft:"10px"}}>
+    <motion.h1 style={{ textAlign: "center", lineHeight: 1.5, fontSize:"5rem", color:"#ba6b57" }}
         transition={spring} 
         animate={{ scale: 1.1, y: 20 }}
           >Hello.</motion.h1>
-    <motion.p style={{ textAlign: "center", lineHeight: 1.5 }}
+    <motion.p style={{ textAlign: "center", lineHeight: 1.5, fontSize:"3rem", color:"#ba6b57"}}
         animate={{ scale: 1.1, y: 20 }}
           >Welcome to my site!</motion.p>
     </div>
     <SpacingGrid/>
+    <TextGrid />
+
     <div style={{ maxWidth: `300px` }}>
     </div>
     
