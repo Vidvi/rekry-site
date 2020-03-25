@@ -40,7 +40,8 @@ const IndexPage = () => (
     <SpacingGrid/>
     <TextGrid />
 
-    <div style={{ maxWidth: `300px` }}>
+    <div style={{fontSize: "15rem", opacity: "0"}}>
+       asd
     </div>
     
     </Layout>
