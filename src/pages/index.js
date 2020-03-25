@@ -13,7 +13,6 @@ import FadeMenu from "../components/fademenu"
 import SpacingGrid from "../components/grid"
 import TextGrid from "../components/textgrid"
 
-
 const variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },

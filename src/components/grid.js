@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import FormLabel from '@material-ui/core/FormLabel';
@@ -9,6 +9,9 @@ import Paper from '@material-ui/core/Paper';
 import Image3 from '../components/reactimage'
 import Image4 from '../components/gatsbyimage'
 import Image5 from '../components/graphqlimage'
+import TransitionLink from "gatsby-plugin-transition-link"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+import gsap from 'gsap'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPortrait } from '@fortawesome/free-solid-svg-icons'
@@ -32,14 +35,33 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+
 function SpacingGrid() {
   const classes = useStyles();
  
   return (
     <Grid container className={classes.root} spacing={7} justify="center">
-      <Grid item xs={4} className={classes.paper}> {portrait} </Grid>
+
+      <Grid item xs={4} className={classes.paper}> 
+      <AniLink cover to="../projects" direction="right" color="orange">
+        {portrait}
+      </AniLink>
+      </Grid>
+
+      <Grid item xs={4} className={classes.paper}>
+        <AniLink cover to="../projects" direction="right">
+        <TransitionLink
+          exit={{
+            delay: 0.2
+          }}
+          entry={{
+            delay: 0.2
+          }}>
+              {code}
+        </TransitionLink>
+        </AniLink>
+      </Grid>
       <Grid item xs={4} className={classes.paper}> {idcard} </Grid>
-      <Grid item xs={4} className={classes.paper}> {code} </Grid>
       </Grid>
   );
 }   export default SpacingGrid
