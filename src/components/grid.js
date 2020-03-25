@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
   paper: {
     textAlign: 'center',
     color: '#e7b2a5',
-    fontSize: '4rem'
+    fontSize: '300%'
   },
 }));
 

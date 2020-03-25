@@ -8,15 +8,12 @@ p {
   line-height: 1.1;
 }
 
-.yaboi {
-  position: absolute;
-  right: 300rem;
-}
-
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 body {
   margin: 0;
