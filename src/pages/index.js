@@ -28,6 +28,7 @@ const spring = {
 const IndexPage = () => (
   <Layout>
     <SEO title="Riku Vidqvist" />
+    <div style={{overflow: "hidden"}}>
     <div style={{margingBottom: "2rem", paddingLeft:"10px"}}>
     <motion.h1 style={{ textAlign: "center", lineHeight: 1.5, fontSize:"5rem", color:"#ba6b57" }}
         transition={spring} 
@@ -39,11 +40,7 @@ const IndexPage = () => (
     </div>
     <SpacingGrid/>
     <TextGrid />
-
-    <div style={{fontSize: "15rem", opacity: "0"}}>
-       asd
     </div>
-    
     </Layout>
   )
 
