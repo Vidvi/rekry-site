@@ -7,12 +7,12 @@ import SEO from "../components/seo"
 import '../components/layout.css'
 import IndexLink from "../components/anilink/indexlink"
 
-const SecondPage = () => (
+const ProfilePage = () => (
   <Layout>
     <div style={{textAlign: "center", lineHeight: 1.5, overflow: "hidden"}}>
     <motion.h1 
       initial={{ scale: 0 }}
-      animate={{ scale: 1.1 }}
+      animate={{ scale: 0.9 }}
       transition={{
         delay: 1.5
         }}> Hello there, this is my profile page!</motion.h1>
@@ -35,4 +35,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default ProfilePage

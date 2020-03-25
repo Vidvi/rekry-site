@@ -7,12 +7,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import '../components/layout.css'
 
-const SecondPage = () => (
+const ProjectPage = () => (
   <Layout>
   <div style={{textAlign: "center", lineHeight: 1.5, overflow: "hidden"}}>
   <motion.h1 
     initial={{ scale: 0 }}
-    animate={{ scale: 1.1 }}
+    animate={{ scale: 0.9 }}
     transition={{
       delay: 1.5
       }}> We meet again. Here are all the projects I've worked on!</motion.h1>
@@ -35,4 +35,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default ProjectPage

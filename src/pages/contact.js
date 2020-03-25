@@ -6,12 +6,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LayoutH from'../components/speclayout.css'
 
-const SecondPage = () => (
+const ContactPage = () => (
   <Layout>
     <div style={{textAlign: "center", lineHeight: 1.5, overflow: "hidden"}}>
     <motion.h1 
       initial={{ scale: 0 }}
-      animate={{ scale: 1.1 }}
+      animate={{ scale: 0.9 }}
       transition={{
         delay: 1.5
         }}> Hello there, here is my contact info!</motion.h1>
@@ -34,4 +34,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default ContactPage
