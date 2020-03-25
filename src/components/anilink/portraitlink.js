@@ -54,7 +54,7 @@ class PortraitLink extends Component{
 
       render() {
           return(
-            <AniLink paintDrip to="/projects#test" hex="#ffffff">
+            <AniLink paintDrip to="/profile#test" hex="#e7b2a5">
             { portrait }
           </AniLink>
           )

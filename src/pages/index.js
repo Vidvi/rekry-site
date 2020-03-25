@@ -4,12 +4,7 @@ import { motion } from "framer-motion"
 import Grid from '@material-ui/core/Grid'
 
 import Layout from "../components/layout"
-import Image2 from "../components/dataimage"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import { Paper, Menu } from "@material-ui/core"
-import { MenuItem } from "react-bootstrap"
-import FadeMenu from "../components/fademenu"
 import SpacingGrid from "../components/grid"
 import TextGrid from "../components/textgrid"
 
@@ -27,14 +22,14 @@ const spring = {
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Riku Vidqvist" />
+    <SEO title="Riku Vidqvist"/>
     <div style={{overflow: "hidden"}}>
-    <div style={{margingBottom: "2rem", paddingLeft:"10px"}}>
-    <motion.h1 style={{ textAlign: "center", lineHeight: 1.5, fontSize:"5rem", color:"#ba6b57" }}
+    <div style={{margingBottom: "2rem"}}>
+    <motion.h1 style={{ textAlign: "center", lineHeight: 1.5, fontSize:"5rem", color:"gainsboro" }}
         transition={spring} 
-        animate={{ scale: 1.1, y: 20 }}
-          >Hello.</motion.h1>
-    <motion.p style={{ textAlign: "center", lineHeight: 1.5, fontSize:"3rem", color:"#ba6b57"}}
+        animate={{ scale: 1.2, y: 30 }}
+          >Hello</motion.h1>
+    <motion.p style={{ textAlign: "center", lineHeight: 1.5, fontSize:"3rem", color:"gainsboro"}}
         animate={{ scale: 1.1, y: 20 }}
           >Welcome to my site!</motion.p>
     </div>

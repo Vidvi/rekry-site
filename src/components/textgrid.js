@@ -1,23 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import FormLabel from '@material-ui/core/FormLabel';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import Radio from '@material-ui/core/Radio';
-import Paper from '@material-ui/core/Paper';
-import Image3 from '../components/reactimage'
-import Image4 from '../components/gatsbyimage'
-import Image5 from '../components/graphqlimage'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPortrait } from '@fortawesome/free-solid-svg-icons'
-import { faIdCard } from '@fortawesome/free-solid-svg-icons'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
-
-const portrait = <FontAwesomeIcon icon={faPortrait} />
-const idcard = <FontAwesomeIcon icon={faIdCard} />
-const code = <FontAwesomeIcon icon={faCode} />
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -26,7 +9,7 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     textAlign: 'center',
-    color: '#e7b2a5',
+    color: 'gainsboro',
   },
 }));
 

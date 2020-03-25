@@ -5,11 +5,11 @@ import gsap from 'gsap'
 import { Link } from 'gatsby'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIdCard } from '@fortawesome/free-solid-svg-icons'
+import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
 
-const idcard = <FontAwesomeIcon icon={faIdCard} />
+const down = <FontAwesomeIcon icon={faChevronCircleDown} />
 
-class ContactLink extends Component{
+class IndexLink extends Component{
     constuctor(props) {
         this.verticalAnimation = this.verticalAnimation.bind(this)
 
@@ -54,10 +54,10 @@ class ContactLink extends Component{
 
       render() {
           return(
-            <AniLink paintDrip to="/contact#test" hex="#ba6b57">
-            { idcard }
+            <AniLink paintDrip to="/#test" hex="#30475e">
+            { down }
           </AniLink>
           )
       }
 
-} export default ContactLink
+} export default IndexLink
