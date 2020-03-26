@@ -55,7 +55,7 @@ class PortfolioLink extends Component{
       render() {
           return(
               <div id="portfoliolink">
-            <AniLink paintDrip to="/projects#test" hex="#ffb385">
+            <AniLink paintDrip to="/projects" hex="#ffb385">
             { code }
           </AniLink>
           </div>

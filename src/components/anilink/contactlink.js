@@ -54,7 +54,7 @@ class ContactLink extends Component{
 
       render() {
           return(
-            <AniLink paintDrip to="/contact#test" hex="#ba6b57">
+            <AniLink paintDrip to="/contact" hex="#ba6b57">
             { idcard }
           </AniLink>
           )

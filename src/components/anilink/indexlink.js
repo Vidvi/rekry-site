@@ -54,7 +54,7 @@ class IndexLink extends Component{
 
       render() {
           return(
-            <AniLink paintDrip to="/#test" hex="#30475e">
+            <AniLink paintDrip to="/" hex="#30475e">
             { down }
           </AniLink>
           )
