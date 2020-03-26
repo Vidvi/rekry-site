@@ -10,7 +10,7 @@ import ContactLink from "./anilink/contactlink"
 const useStyles = makeStyles(theme => ({
   root: {
     size: "300%",
-    paddingTop: 100,
+    paddingTop: "7%",
     flexGrow: 1,
   },
   paper: {
@@ -26,9 +26,9 @@ function SpacingGrid() {
  
   return (
     <Grid container className={classes.root} spacing={7} justify="center">
-      <Grid item xs={4} className={classes.paper}> <PortraitLink/> </Grid>
-      <Grid item xs={4} className={classes.paper}> <PortfolioLink/> </Grid>
-      <Grid item xs={4} className={classes.paper}> <ContactLink/> </Grid>
+      <Grid item xs={4}> <PortraitLink/> </Grid>
+      <Grid item xs={4}> <PortfolioLink/> </Grid>
+      <Grid item xs={4}> <ContactLink/> </Grid>
     </Grid>
   );
 }   export default SpacingGrid

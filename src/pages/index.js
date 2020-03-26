@@ -35,8 +35,12 @@ const IndexPage = () => (
           >Welcome to my site!</motion.p>
     </div>
     <hr/>
+    <div style={{fontSize:"200%", textAlign:"center"}}>
     <SpacingGrid/>
+    </div>
+    <div style={{color:"gainsboro", textAlign:"center"}}>
     <TextGrid />
+    </div>
     </div>
     </Layout>
   )
