@@ -20,7 +20,7 @@ const ContactPage = () => (
         }}> Hello there, here is my contact info!</motion.h1>
       <motion.h2 
       initial={{ scale: 0 }}
-      animate={{ scale: 1.1 }}
+      animate={{ scale: 1 }}
       transition={{
         delay: 2
         }}> Contact me if you need some enthusiastic and efficient workforce! </motion.h2>
