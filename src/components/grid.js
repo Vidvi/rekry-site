@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import { motion } from "framer-motion"
 
 import PortraitLink from "./anilink/portraitlink"
 import PortfolioLink from "./anilink/portfoliolink"
@@ -25,7 +26,6 @@ function SpacingGrid() {
  
   return (
     <Grid container className={classes.root} spacing={7} justify="center">
-
       <Grid item xs={4} className={classes.paper}> <PortraitLink/> </Grid>
       <Grid item xs={4} className={classes.paper}> <PortfolioLink/> </Grid>
       <Grid item xs={4} className={classes.paper}> <ContactLink/> </Grid>

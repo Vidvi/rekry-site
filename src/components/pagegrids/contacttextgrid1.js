@@ -10,17 +10,17 @@ const useStyles = makeStyles(theme => ({
   paper: {
     textAlign: 'center',
     color: 'gainsboro',
+    lineHeight: 1.5
   },
 }));
 
-function TextGrid() {
+function ContactTextGrid1() {
   const classes = useStyles();
 
   return (
     <Grid container className={classes.root} spacing={7} justify="center">
-      <Grid item xs={4} md={4} className={classes.paper}> Start by clicking the icon to learn more about me! </Grid>
-      <Grid item xs={4} md={4} className={classes.paper}> If you click the icon above you can view some of my previous projects! </Grid>
-      <Grid item xs={4} md={4} className={classes.paper}> Click the icon above to get some contact info. </Grid>
+        <Grid item xs={12} md={6} className={classes.paper}> My email adress is <a href="mailto:rikuvidqvist@hotmail.com"> rikuvidqvist@hotmail.com</a> </Grid>
+        <Grid item xs={12} md={6} className={classes.paper}> Or you can just call me if you want, <a href="tel:+358407678747"> here! </a> </Grid>
       </Grid>
   );
-}   export default TextGrid
+}   export default ContactTextGrid1

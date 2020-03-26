@@ -5,6 +5,9 @@ import IndexLink from "../components/anilink/indexlink"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LayoutH from'../components/speclayout.css'
+import RikuKuva from "../components/dataimage"
+import ContactTextGrid1 from '../components/pagegrids/contacttextgrid1'
+import ContactTextGrid2 from '../components/pagegrids/contacttextgrid2'
 
 const ContactPage = () => (
   <Layout>
@@ -20,14 +23,25 @@ const ContactPage = () => (
       animate={{ scale: 1.1 }}
       transition={{
         delay: 2
-        }}> Cool beans bro </motion.h2>
-    <div style={{ fontSize: "200%", position: "relative", bottom: "10%" }}>
+        }}> Contact me if you need some enthusiastic and efficient workforce! </motion.h2>
+    <div style={{marginTop:"5%"}}>
       <motion.div 
       initial={{ scale: 0 }}
-      animate={{ scale: 1.1 }}
+      animate={{ scale: 1 }}
       transition={{
         delay: 2.5
-        }}><IndexLink />
+        }}>
+          <div style={{width:"30%", position: "relative", left:"35%"}}>
+            <RikuKuva/>
+          </div>
+        <div style={{marginTop:"5%"}}>
+            <ContactTextGrid1/>
+            <hr style={{margin: "7%"}}/>
+            <ContactTextGrid2/>
+            <div style={{ fontSize:"200%", position: "relative", bottom: "8%" }}>
+            <IndexLink/>
+          </div>      
+        </div>
       </motion.div>
     </div>
     </div>

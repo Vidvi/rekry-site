@@ -14,10 +14,10 @@ import GatsbyImage from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image4 = () => {
+const Conthrive = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "gatsby.png" }) {
+      placeholderImage: file(relativePath: { eq: "conthrive.png" }) {
         childImageSharp {
           fluid(maxWidth: 300, maxHeight: 300) {
             ...GatsbyImageSharpFluid
@@ -30,4 +30,4 @@ const Image4 = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-export default Image4
+export default Conthrive

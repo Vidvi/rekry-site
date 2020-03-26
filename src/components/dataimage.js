@@ -14,10 +14,10 @@ import GatsbyImage from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image2 = () => {
+const RikuKuva = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "header.png" }) {
+      placeholderImage: file(relativePath: { eq: "rikukuva.JPG" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -32,4 +32,4 @@ const Image2 = () => {
 
 
 
-export default Image2
+export default RikuKuva

@@ -5,9 +5,9 @@ import gsap from 'gsap'
 import { Link } from 'gatsby'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons'
 
-const down = <FontAwesomeIcon icon={faChevronCircleDown} />
+const down = <FontAwesomeIcon icon={faChevronCircleLeft} />
 
 class IndexLink extends Component{
     constuctor(props) {
@@ -29,13 +29,13 @@ class IndexLink extends Component{
           .to(this.transitionCover, {
             y: '0%',
             ease: "power1.easeInOut",
-            duration: seconds / 2,
+            duration: seconds / 3,
           })
           .set(this.layoutContents, { opacity: 0 })
           .to(this.transitionCover, {
             y: directionTo,
             ease: "power1.easeIn",
-            duration: seconds / 2,
+            duration: seconds / 3,
           })
       }
 

@@ -6,6 +6,8 @@ import IndexLink from "../components/anilink/indexlink"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import '../components/layout.css'
+import ProjectTextGrid1 from '../components/pagegrids/projecttextgrid1'
+import ProjectTextGrid2 from '../components/pagegrids/projecttextgrid2'
 
 const ProjectPage = () => (
   <Layout>
@@ -15,23 +17,29 @@ const ProjectPage = () => (
     animate={{ scale: 0.9 }}
     transition={{
       delay: 1.5
-      }}> We meet again. Here are all the projects I've worked on!</motion.h1>
+      }}> We meet again. Here are some of the projects I've worked on!</motion.h1>
     <motion.h2 
     initial={{ scale: 0 }}
-    animate={{ scale: 1.1 }}
+    animate={{ scale: 1 }}
     transition={{
       delay: 2
       }}> From hackathons to making my own website. </motion.h2>
-  <div style={{ fontSize: "200%", position: "relative", bottom: "10%" }}>
-    <motion.div 
-    initial={{ scale: 0 }}
-    animate={{ scale: 1.1 }}
-    transition={{
-      delay: 2.5
-      }}><IndexLink />
-    </motion.div>
-  </div>
-  </div>
+  <div style={{ marginTop:"5%" }}>
+      <motion.div 
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{
+          delay: 2.5
+          }}>
+            <ProjectTextGrid1/>
+            <hr style={{margin: "7%"}}/>
+            <ProjectTextGrid2/>
+            <div style={{ fontSize:"200%", position: "relative", bottom: "8%" }}>
+            <IndexLink/>
+          </div>      
+      </motion.div>
+    </div>
+    </div>
   </Layout>
 )
 
