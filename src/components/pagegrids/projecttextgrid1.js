@@ -21,7 +21,7 @@ function ProjectTextGrid1() {
   return (
     <Grid container className={classes.root} spacing={7} justify="center">
         <Grid item xs={12} md={6} className={classes.paper}> Our team from <a href="https://conthrive.com/">Conthrive</a> put together a hackathon in the beginning of March. Cool experience and even cooler event! </Grid>
-        <Grid item xs={12} md={6} className={classes.paper}> I worked at Conthrive as a sales rep, which meant I was reaching out to companies to get them to attend our Hackathon! Got some some good experience for managing projects. </Grid>
+        <Grid item xs={12} md={6} className={classes.paper}> Currently I'm acting as the Stakeholder coordinator at <a href="https://www.ideajkl.fi">Idea JKL</a> event.</Grid>
       </Grid>
   );
 }   export default ProjectTextGrid1
